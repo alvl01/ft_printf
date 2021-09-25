@@ -1,7 +1,12 @@
 #include "ft_printf.h"
 #include <stdio.h>
-int main()
+
+int	main(int argc, char **argv)
 {
-  if(printf("ok%c\n", 'a') == ft_printf("ok%c\n", 'a'))
-    printf("ok\n");
+	char	*c;
+
+	(void)argc;
+	c = "|abcdefg|";
+	if (ft_printf("|%010s|", NULL) == printf("|%010s|", NULL))
+		ft_printf("%s\n", "ok");
 }
