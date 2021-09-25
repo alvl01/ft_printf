@@ -1,7 +1,7 @@
 #include "ft_printf.h"
 
-int	ft_putchar(char c)
+void	ft_putchar(int c, int *len)
 {
 	write(1, &c, 1);
-  return (1);
+	(*len)++;
 }
